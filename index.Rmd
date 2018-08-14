@@ -5,8 +5,7 @@ title: "Louis Yansaud's Website"
 __Look at how cool my Resume is  is!__
 
 
-#remove backslashes before ticks to get this to work. 
-```{r, echo = FALSE, fig.align='center'}
+```{r, echo = FALSE, fig.align='center', warning= F, fig.width = 15, fig.height = 10}
 library(VisualResume)
 
 VisualResume(
