@@ -1,0 +1,39 @@
+---
+title: "Louis Yansaud's Website"
+---
+
+__Look at how cool my Resume is  is!__
+
+
+#remove backslashes before ticks to get this to work. 
+```{r, echo = FALSE, fig.align='center'}
+library(VisualResume)
+
+VisualResume(
+titles.left = c("Louis Yansaud, M.S", "Business Analytics, Data Science", "Let's talk Data"),
+titles.right = c("louistaylor91@gmail.com", "San Francisco", "https://github.com/lyansaud"),
+titles.right.cex = c(2, 2, 2),
+titles.left.cex = c(4,2,2),
+timeline.labels = c("Education and Employment", "Technical Skills"),
+timeline = data.frame(title = c("UC Davis", "UTC Aerospace System", "Callan Associates", "Funding Circle", "University of Southern California", "Happy Money"),
+                      sub = c("BA. Student", "Supply Chain Analyst Intern", "Investment Analyst", "Quality Data Analyst", "MS. Student", "Data Science Intern"),
+                      start = c(2010, 2014.5, 2015.5, 2016.5, 2017.5, 2018.5),
+                      end = c(2015, 2015.1, 2016.5, 2017.5, 2018.9, 2018.9),
+                      side = c(1, 1, 1, 1, 1, 0)),
+milestones = data.frame(title = c("BA", "MS"),
+                        sub = c("Statistics/Economics", "Business Analytics"),
+                        year = c(2015, 2018)),
+events = data.frame(year = c(2010, 2014.5, 2015.5, 2017, 2018),
+                    title = c("UC Davis Undergraduate Student",
+                              "First undergraduate Internship at UTC Aerospace Systems",
+                              "Moved to San Francisco",
+                              "Datacamp Data Scientist Certification",
+                              "Graduated from USC Marshall Business School")),
+interests = list("Programming" = c(rep("R", 8), rep("Python", 8), rep("MySQL", 8), rep("NoSQL",8)),
+                 "Dashboard" = c(rep("Looker", 8), rep("Tableau", 8), rep("Salesforce",8), rep("Shiny Applications", 8)),
+                 "Statistical Techniques" = c(rep("Data Visualization", 8), rep("Data-Analysis", 8), rep("Data Wrangling", 8), rep("Machine Learning",8))),
+       
+year.steps = 5
+)
+
+```
